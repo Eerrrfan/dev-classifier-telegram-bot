@@ -63,7 +63,7 @@ def main():
         "I use Python and Java for backend development.",
         "I love watching movies with my friends.",
         "I'm debugging a bug in my React project.",
-        "I'm going to the gym later."
+        "I'm going to the gym later.."
     ]
     preds = best_model.predict(test_samples)
     print("\n🔍 Test predictions on some sample texts:")

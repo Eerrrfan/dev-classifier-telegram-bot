@@ -9,7 +9,7 @@ def main():
         text = input("Enter a message: ")
 
         if text.lower() == "exit":
-            print("Exiting....")
+            print("Exiting......")
             break
 
         pred = model.predict([text])[0]
