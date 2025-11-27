@@ -1,85 +1,48 @@
+<h1 align="center">Dev or Not? 👨‍💻🤖</h1>
 
-
-```markdown
-# Dev or Not? 👨‍💻🤖
-A simple machine learning project that predicts whether a person *is a programmer or not* based on their text.  
-Includes a training script, CLI prediction tool, and a Telegram bot.
-
----
-
-## 📌 Features
-- Text classification using TF-IDF  
-- Trains multiple ML models and saves the best one  
-- CLI tool for quick predictions  
-- Telegram bot connected to the trained model  
-- Easy-to-understand project structure
+<p align="center">
+A lightweight and fun machine learning project that predicts whether someone <b>is a programmer</b> — based only on their text.
+<br>
+Includes model training, a CLI predictor, and a Telegram bot.
+</p>
 
 ---
 
-## 🗂 Project Structure
-```
+## ✨ What This Project Does
+- Learns from a text dataset (`dev` vs `nondev`)
+- Trains multiple ML models and picks the best one automatically
+- Saves the final model for later usage
+- Offers:
+  - ⚡ A simple **CLI prediction tool**
+  - 🤖 A fully working **Telegram bot**
 
-programmer_dataset_15k.csv   # Dataset
-train.py                     # Train the model
-predict.py                   # CLI prediction tool
-bot.py                       # Telegram bot
-README.md
+---
 
-```
+## 📁 Project Layout
+
+
+programmer_dataset_15k.csv → dataset
+train.py → train the ML model
+predict.py → quick CLI predictor
+bot.py → Telegram bot
+
+
 
 ---
 
 ## ⚙️ Installation
-```
-
+```bash
 pip install pandas scikit-learn joblib python-telegram-bot
 
-```
 
----
 
-## 🧠 Train the Model
-```
+
+🧠 Train the Model
 
 python train.py
 
-```
-The best model will be saved as:
-```
 
+The trained model will be saved as:
 programmer_model.joblib
 
-```
 
----
-
-## 🧪 CLI Prediction
-```
-
-python predict.py
-
-```
-Type any text → get prediction  
-Type `EXIT` → quit
-
----
-
-## 🤖 Telegram Bot
-1. Create a bot using **@BotFather**
-2. Set your token:
-   - Linux/Mac:  
-     `export TELEGRAM_BOT_TOKEN="YOUR_TOKEN"`
-   - Windows (PowerShell):  
-     `setx TELEGRAM_BOT_TOKEN "YOUR_TOKEN"`
-3. Run the bot:
-```
-
-python bot.py
-
-```
-
----
-
-## 📜 License
-MIT License
-```
